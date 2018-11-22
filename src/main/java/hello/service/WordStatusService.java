@@ -20,7 +20,7 @@ public class WordStatusService {
 		
 	}
 
-	private boolean isAnagramOfPalindrome(String word) {
+	public boolean isAnagramOfPalindrome(String word) {
 		int [] count = new int[NUMBER_OF_ALPHABET_CHARACTERS];
         for( int i = 0; i < word.length(); i++ )
         {
@@ -38,7 +38,7 @@ public class WordStatusService {
         return true;
 	}
 
-	private boolean isPalindrome(String word) {
+	public boolean isPalindrome(String word) {
 		String wordInReverse = new StringBuilder(word).reverse().toString();
 		return word.equals(wordInReverse);
 	}
